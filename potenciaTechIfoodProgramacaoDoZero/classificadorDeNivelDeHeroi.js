@@ -43,13 +43,13 @@ Bons estudos 😉 */
 
 */
 
-let heroName = get();
-let heroXp = get1();
+let heroName = get("Informe o nome do Heroi");
+let heroXp = get1("Informe o XP");
 
-function get () {
+function get (text) {
     let resposta ="";
     while (resposta===""){
-     resposta = prompt("Informe Seu Usuário")
+     resposta = prompt(text)
     return resposta}
 
 }
