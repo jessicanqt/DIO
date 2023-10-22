@@ -34,6 +34,15 @@ Ao final deve se exibir uma mensagem:
  
 Bons estudos 😉 */
 
+/*
+ ___________________________________
+|          Data:21/10/2023          |
+|           Jessica Nadia           |   
+|            Desafio DIO            |
+|___________________________________|
+
+*/
+
 let heroName = get();
 let heroXp = get1();
 
