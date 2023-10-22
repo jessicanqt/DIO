@@ -6,8 +6,12 @@
 |___________________________________|
 
 */
-let ataque
 
+const prompt = require("prompt-sync")({ sigint: true});
+
+let ataque="";
+let tipo="";
+let idade="";
 
 // Verifica qual o tipo de ataque de acordo com o Heroi
 
@@ -37,14 +41,14 @@ else {
 //Retorna o ataque de acordo com o Tipo do Heroi
 
 function atacar () {
-    console.log(""o {tipo} atacou usando {ataque}")")
+    console.log(`o ${tipo} atacou usando ${ataque}`)
 }
 
 
 
-class nextAdventure ( ) {
-    nome:
-    idade:
-    tipo:
+class nextAdventure ( 
+    nome:"",
+    idade:"",
+    tipo:","
     
-}
+)
