@@ -1,5 +1,5 @@
-/*
-
+/*  
+  
 Instruções para entrega
 # 1️⃣ Desafio Classificador de nível de Herói
 
@@ -54,53 +54,53 @@ function get (text) {
 
 }
 
-function get1 () {
+function get1 (text1) {
     let resposta1=""
     while (resposta1===""){
-     resposta1 = prompt("Informe o XP")
+     resposta1 = prompt(text1)
     return resposta1 }
 
 }
 
 if (heroXp <1000) {
 
-    console.log=("O Heroi de " + heroName + " está no nível Ferro")
+    console.log("O Heroi de " + heroName + " está no nível Ferro")
 
 }
 
-if (heroXp >= 1001 && heroXp <= 2000) {
+else if (heroXp >= 1001 && heroXp <= 2000) {
 
-    console.log=("O Heroi de " + heroName + " está no nível Bronze")
+    console.log("O Heroi de " + heroName + " está no nível Bronze")
 }
 
-if (heroXp >= 2001 && heroXp <= 5000) {
+else if (heroXp >= 2001 && heroXp <= 5000) {
 
-    console.log=("O Heroi de " + heroName + " está no nível Prata")
+    console.log("O Heroi de " + heroName + " está no nível Prata")
 }
 
-if (heroXp >= 6001 && heroXp <= 7000) {
+else if (heroXp >= 6001 && heroXp <= 7000) {
 
-    console.log=("O Heroi de " + heroName + " está no nível Ouro")
+    console.log("O Heroi de " + heroName + " está no nível Ouro")
 }
 
-if (heroXp >= 7001 && heroXp <= 8000) {
+else if (heroXp >= 7001 && heroXp <= 8000) {
 
-    console.log=("O Heroi de " + heroName + " está no nível Platina")
+    console.log("O Heroi de " + heroName + " está no nível Platina")
 }
 
-if (heroXp >= 8001 && heroXp <= 9000) {
+else if (heroXp >= 8001 && heroXp <= 9000) {
 
-    console.log=("O Heroi de " + heroName + " está no nível Ascendente")
+    console.log("O Heroi de " + heroName + " está no nível Ascendente")
 }
 
-if (heroXp >= 9001 && heroXp <= 10000) {
+else if (heroXp >= 9001 && heroXp <= 10000) {
 
-    console.log=("O Heroi de " + heroName + " está no nível Imortal")
+    console.log("O Heroi de " + heroName + " está no nível Imortal")
 }
 
-if (heroXp >= 10001) {
+else if (heroXp >= 10001) {
 
-    console.log=("O Heroi de " + heroName + " está no nível Radiante")
+    console.log("O Heroi de " + heroName + " está no nível Radiante")
 }
 
 else {
