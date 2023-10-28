@@ -13,11 +13,15 @@ const prompt = require("prompt-sync")({ sigint: true});
 let type = get('Informe o tipo do heroi :');
 let idade = get("Informe  a idade :");
 
+
+
 atacar ()
 
 
 function get (message) {
-    info = prompt(message)
+    while (info == '') {
+    info = prompt(message) 
+    }
     return info
 }
 
