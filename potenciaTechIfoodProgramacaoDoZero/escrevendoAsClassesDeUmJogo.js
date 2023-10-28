@@ -9,46 +9,56 @@
 
 const prompt = require("prompt-sync")({ sigint: true});
 
-let ataque="";
-let tipo="";
-let idade="";
+
+let type = get('Informe o tipo do heroi :');
+let idade = get("Informe  a idade :");
+
+atacar ()
+
+
+function get (message) {
+    info = prompt(message)
+    return info
+}
+
+
+class NextAdventure {
+
+    constructor(nome,idade,tipo) {
+    this.nome=nome;
+    this.idade=idade;
+    this.tipo=tipo;
+    }  
+}
 
 // Verifica qual o tipo de ataque de acordo com o Heroi
 
-if (tipo==="mago") {
+function atacar (tipo) {
+    tipo = type
+    if (tipo==="mago") {
     
-console.log("usou Magia")
+        attack="usou Magia"
+        
+        }
+        
+        else if(tipo==="gerreiro") {
+            attack="Usou Espada"
+        }
+        
+        else if (tipo==="monge") {
+            attack="Usou Artes Marciais"
+        }
+        
+        else if (tipo==="ninja") {
+            attack="Usou Shuriken"
+        }
+        
+        else {
+
+            attack="tipo de heroi nao encontrado"
+        }
+        
+    console.log(`O ${type} atacou usando ${attack}`)
 
 }
 
-if (tipo==="gerreiro") {
-    console.log("Usou Espada")
-}
-
-if (tipo==="monge") {
-    console.log("Usou Artes Marciais")
-}
-
-if (tipo==="ninja") {
-    console.log("Usou Shuriken")
-}
-
-else {
-    console.log("tipo de heroi nao encontrado")
-}
-
-
-//Retorna o ataque de acordo com o Tipo do Heroi
-
-function atacar () {
-    console.log(`o ${tipo} atacou usando ${ataque}`)
-}
-
-
-
-class nextAdventure ( 
-    nome:"",
-    idade:"",
-    tipo:","
-    
-)
